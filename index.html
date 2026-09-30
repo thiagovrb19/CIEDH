@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3 Aulas Gratuitas | Cuidados com o Idoso — CIEDH</title>
+  <meta name="description" content="Aprenda os primeiros passos para cuidar de pessoas idosas com mais segurança e preparo. 3 aulas especiais e gratuitas da CIEDH com emissão de certificado.">
+  <meta name="theme-color" content="#1685A5">
+
+  <!-- Open Graph / Redes Sociais -->
+  <meta property="og:title" content="3 Aulas Gratuitas | Cuidados com o Idoso — CIEDH">
+  <meta property="og:description" content="Aprenda os primeiros passos para cuidar de pessoas idosas com segurança e preparo. Inscreva-se gratuitamente!">
+  <meta property="og:image" content="images/hero-caregiver.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/logo-ciedh.png">
+
+  <!-- Google Fonts: Montserrat & Open Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome para Ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Estilos da Landing Page -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Barra de Notificação Superior / Urgência Positiva -->
+  <div class="top-announcement">
+    <div class="container announcement-inner">
+      <span class="announcement-pill"><i class="fa-solid fa-bolt"></i> VAGAS LIMITADAS</span>
+      <p class="announcement-text">Inscrições abertas para a nova turma do evento <strong>3 Aulas Gratuitas de Cuidados com o Idoso</strong></p>
+    </div>
+  </div>
+
+  <!-- 1. TOPO DA PÁGINA (Header com foco em conversão) -->
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="header-logo-wrap">
+        <a href="#hero" class="logo-link" title="CIEDH - Centro Integrado de Educação e Desenvolvimento Humano">
+          <img src="images/logo-ciedh.png" alt="Logo CIEDH - Centro Integrado de Educação e Desenvolvimento Humano" class="header-logo">
+        </a>
+      </div>
+      <div class="header-badge-wrap">
+        <span class="header-free-badge">
+          <i class="fa-solid fa-graduation-cap"></i> 3 AULAS GRATUITAS
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 2 e 3. HERO SECTION — PRIMEIRA TELA -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <!-- Coluna da Esquerda: Conteúdo e Formulário -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-indicator"></span>
+            <i class="fa-regular fa-circle-play"></i> EVENTO ONLINE GRATUITO
+          </div>
+
+          <h1 class="hero-title">
+            Quer aprender os primeiros passos para cuidar de pessoas idosas com mais segurança e preparo?
+          </h1>
+
+          <p class="hero-subtitle">
+            Participe gratuitamente de <strong>3 aulas especiais da CIEDH</strong> e conheça fundamentos essenciais para quem deseja começar a se desenvolver na área de Cuidados com o Idoso.
+          </p>
+
+          <!-- Destaques / Benefícios com checks -->
+          <ul class="hero-highlights">
+            <li>
+              <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+              <span><strong>3 aulas gratuitas</strong> e 100% práticas</span>
+            </li>
+            <li>
+              <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+              <span><strong>Conteúdo introdutório</strong> descomplicado</span>
+            </li>
+            <li>
+              <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+              <span><strong>Para iniciantes</strong> — não exige experiência anterior</span>
+            </li>
+            <li>
+              <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+              <span><strong>Certificado de participação</strong> emitido pela CIEDH</span>
+            </li>
+          </ul>
+
+          <!-- Card do Formulário de Conversão no Hero -->
+          <div class="hero-form-card" id="formulario">
+            <div class="form-header">
+              <h2 class="form-title"><i class="fa-solid fa-shield-halved text-teal"></i> Garanta sua vaga gratuita</h2>
+              <p class="form-subtitle">Preencha seus dados abaixo para receber as informações e links de acesso das aulas no seu WhatsApp e e-mail.</p>
+            </div>
+
+            <form id="leadForm" class="lead-form" novalidate>
+              <div class="form-group">
+                <label for="nome"><i class="fa-regular fa-user"></i> Nome completo</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required autocomplete="name">
+                <span class="field-error" id="error-nome"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="whatsapp"><i class="fa-brands fa-whatsapp"></i> WhatsApp (com DDD)</label>
+                <input type="tel" id="whatsapp" name="whatsapp" placeholder="(00) 00000-0000" maxlength="15" required autocomplete="tel">
+                <span class="field-error" id="error-whatsapp"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email"><i class="fa-regular fa-envelope"></i> E-mail principal</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required autocomplete="email">
+                <span class="field-error" id="error-email"></span>
+              </div>
+
+              <button type="submit" class="btn-cta-primary" id="btnSubmit">
+                <span>QUERO GARANTIR MINHA VAGA GRATUITA</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+
+              <div class="form-footer-notes">
+                <div class="security-badge">
+                  <i class="fa-solid fa-lock"></i>
+                  <span>Seus dados estão protegidos de acordo com a LGPD. Não enviamos spam.</span>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Coluna da Direita: Imagem Profissional Hero & Card Flutuante -->
+        <div class="hero-visual">
+          <div class="hero-image-wrapper">
+            <img src="images/hero-caregiver.jpg" alt="Cuidadora profissional auxiliando pessoa idosa com carinho e respeito em ambiente residencial" class="hero-main-img">
+            
+            <div class="hero-card-floating hero-card-top">
+              <div class="card-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+              <div class="card-info">
+                <strong>Cuidado Humanizado</strong>
+                <span>Técnica, respeito e dedicação</span>
+              </div>
+            </div>
+
+            <div class="hero-card-floating hero-card-bottom">
+              <div class="card-icon check-circle"><i class="fa-solid fa-award"></i></div>
+              <div class="card-info">
+                <strong>Certificado de Participação</strong>
+                <span>Emitido pelo CIEDH</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. BLOCO DE IDENTIFICAÇÃO -->
+    <section class="section identification-section">
+      <div class="container">
+        <div class="section-title-wrap text-center">
+          <span class="section-tag">PÚBLICO-ALVO</span>
+          <h2 class="section-title">Você se identifica com alguma dessas situações?</h2>
+          <p class="section-description">Selecione as opções que mais têm a ver com o seu momento atual:</p>
+        </div>
+
+        <div class="situations-grid">
+          <div class="situation-item">
+            <div class="situation-bullet"><i class="fa-solid fa-check"></i></div>
+            <p class="situation-text">"Quero trabalhar cuidando de pessoas e fazer a diferença na vida delas."</p>
+          </div>
+          <div class="situation-item">
+            <div class="situation-bullet"><i class="fa-solid fa-check"></i></div>
+            <p class="situation-text">"Tenho interesse na área da saúde e quero dar os primeiros passos."</p>
+          </div>
+          <div class="situation-item">
+            <div class="situation-bullet"><i class="fa-solid fa-check"></i></div>
+            <p class="situation-text">"Quero aprender a cuidar melhor e com mais segurança de um familiar idoso."</p>
+          </div>
+          <div class="situation-item">
+            <div class="situation-bullet"><i class="fa-solid fa-check"></i></div>
+            <p class="situation-text">"Estou procurando uma nova oportunidade profissional que está em alta no mercado."</p>
+          </div>
+          <div class="situation-item">
+            <div class="situation-bullet"><i class="fa-solid fa-check"></i></div>
+            <p class="situation-text">"Quero conhecer a área de perto antes de investir em uma formação mais longa."</p>
+          </div>
+        </div>
+
+        <div class="identification-conclusion">
+          <div class="conclusion-box">
+            <i class="fa-solid fa-circle-check conclusion-icon"></i>
+            <div>
+              <h3>Se você se identificou com alguma dessas situações, essas três aulas foram pensadas para você.</h3>
+              <p>Uma imersão segura, acessível e sem falsas promessas, focada no seu desenvolvimento real.</p>
+            </div>
+            <a href="#formulario" class="btn-cta-secondary">QUERO ME INSCREVER</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. O QUE VOCÊ VAI APRENDER -->
+    <section class="section curriculum-section bg-light">
+      <div class="container">
+        <div class="section-title-wrap text-center">
+          <span class="section-tag">PROGRAMAÇÃO COMPLETA</span>
+          <h2 class="section-title">O que você vai aprender nas 3 aulas</h2>
+          <p class="section-description">Uma jornada pensada passo a passo para quem está começando do zero</p>
+        </div>
+
+        <div class="lessons-grid">
+          <!-- AULA 1 -->
+          <div class="lesson-card">
+            <div class="lesson-badge">AULA 01</div>
+            <div class="lesson-icon-wrap">
+              <i class="fa-solid fa-compass"></i>
+            </div>
+            <h3 class="lesson-title">Conhecendo o universo do cuidado com o idoso</h3>
+            <p class="lesson-desc">
+              Uma introdução ampla à profissão: entenda como funciona a rotina diária do cuidador, as principais responsabilidades éticas e o panorama de oportunidades no Brasil.
+            </p>
+            <ul class="lesson-topics">
+              <li><i class="fa-solid fa-circle-check"></i> O que faz e o que não faz um cuidador</li>
+              <li><i class="fa-solid fa-circle-check"></i> Postura profissional e ética no cuidado</li>
+              <li><i class="fa-solid fa-circle-check"></i> Como funciona a rotina de trabalho</li>
+            </ul>
+          </div>
+
+          <!-- AULA 2 -->
+          <div class="lesson-card featured-lesson">
+            <div class="lesson-badge featured-badge">AULA 02</div>
+            <div class="lesson-icon-wrap">
+              <i class="fa-solid fa-hand-holding-medical"></i>
+            </div>
+            <h3 class="lesson-title">Cuidados básicos no dia a dia com segurança</h3>
+            <p class="lesson-desc">
+              Conceitos fundamentais e medidas preventivas para uma rotina de cuidado organizada, minimizando riscos de acidentes e promovendo o bem-estar do idoso.
+            </p>
+            <ul class="lesson-topics">
+              <li><i class="fa-solid fa-circle-check"></i> Prevenção de quedas e adaptação do lar</li>
+              <li><i class="fa-solid fa-circle-check"></i> Noções de mobilidade e auxílio em transferências</li>
+              <li><i class="fa-solid fa-circle-check"></i> Organização de horários e rotina de medicamentos</li>
+            </ul>
+          </div>
+
+          <!-- AULA 3 -->
+          <div class="lesson-card">
+            <div class="lesson-badge">AULA 03</div>
+            <div class="lesson-icon-wrap">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <h3 class="lesson-title">O papel do cuidador e os próximos passos</h3>
+            <p class="lesson-desc">
+              Habilidades e competências comportamentais essenciais, os desafios da profissão e como traçar um plano seguro para quem deseja ingressar no mercado de trabalho.
+            </p>
+            <ul class="lesson-topics">
+              <li><i class="fa-solid fa-circle-check"></i> Comunicação e inteligência emocional com a família</li>
+              <li><i class="fa-solid fa-circle-check"></i> Como montar um perfil profissional confiável</li>
+              <li><i class="fa-solid fa-circle-check"></i> Orientações para certificações e aprofundamento</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="curriculum-notice">
+          <i class="fa-solid fa-circle-info"></i>
+          <span><strong>Compromisso CIEDH:</strong> Os temas foram estruturados com rigor pedagógico para proporcionar uma visão prática e transparente da atuação com idosos.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. BLOCO DE VALOR -->
+    <section class="section value-section">
+      <div class="container">
+        <div class="value-header text-center">
+          <span class="section-tag">POR QUE PARTICIPAR?</span>
+          <h2 class="section-title">Por que participar dessas 3 aulas?</h2>
+          <p class="value-lead-text">
+            Antes de escolher uma profissão ou investir seu dinheiro e tempo em uma formação completa, você precisa conhecer a área de verdade.
+          </p>
+          <p class="value-sub-text">
+            Durante as três aulas, você terá contato direto com conteúdos introdutórios sobre o cuidado com pessoas idosas e poderá entender se essa área faz sentido para a sua vida e objetivos.
+          </p>
+        </div>
+
+        <div class="value-cards-grid">
+          <div class="value-card">
+            <div class="value-card-icon">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <h3 class="value-card-title">CONHECIMENTO</h3>
+            <p class="value-card-desc">
+              Tenha contato com conceitos fundamentais e baseados em boas práticas de saúde para agir com segurança e discernimento.
+            </p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-card-icon">
+              <i class="fa-solid fa-clock-rotate-left"></i>
+            </div>
+            <h3 class="value-card-title">EXPERIÊNCIA</h3>
+            <p class="value-card-desc">
+              Conheça de perto a rotina, as exigências e os desafios reais enfrentados diariamente por cuidadores profissionais.
+            </p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-card-icon">
+              <i class="fa-solid fa-signs-post"></i>
+            </div>
+            <h3 class="value-card-title">DIRECIONAMENTO</h3>
+            <p class="value-card-desc">
+              Descubra com clareza quais podem ser os próximos passos caso deseje continuar sua qualificação e atuar na área.
+            </p>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="#formulario" class="btn-cta-primary">
+            <span>QUERO APROVEITAR AS 3 AULAS GRATUITAS</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. QUEM É A CIEDH? -->
+    <section class="section about-section bg-light">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text-col">
+            <span class="section-tag">INSTITUCIONAL</span>
+            <h2 class="section-title">Quem é a CIEDH?</h2>
+            <h3 class="about-motto">Educação que prepara para novas oportunidades.</h3>
+            
+            <p class="about-paragraph">
+              A <strong>CIEDH — Centro Integrado de Educação e Desenvolvimento Humano</strong> — atua com dedicação na área de educação e capacitação profissional, oferecendo cursos e formações voltados ao desenvolvimento integral de pessoas e à sua preparação para o mercado de trabalho.
+            </p>
+
+            <blockquote class="about-quote">
+              <i class="fa-solid fa-quote-left"></i>
+              "A educação que desenvolve pessoas e transforma possibilidades em oportunidades."
+            </blockquote>
+
+            <div class="about-pillars">
+              <div class="pillar-item">
+                <i class="fa-solid fa-user-graduate"></i>
+                <div>
+                  <strong>Foco no Aluno</strong>
+                  <span>Metodologia prática e acolhedora</span>
+                </div>
+              </div>
+              <div class="pillar-item">
+                <i class="fa-solid fa-stethoscope"></i>
+                <div>
+                  <strong>Área da Saúde</strong>
+                  <span>Formações alinhadas à realidade profissional</span>
+                </div>
+              </div>
+              <div class="pillar-item">
+                <i class="fa-solid fa-handshake"></i>
+                <div>
+                  <strong>Credibilidade</strong>
+                  <span>Compromisso ético com sua evolução</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-visual-col">
+            <div class="about-card-display">
+              <div class="about-logo-wrapper">
+                <img src="images/logo-ciedh.png" alt="Símbolo CIEDH - Conhecimento e Desenvolvimento Humano" class="about-logo-img">
+              </div>
+              <div class="about-badge-footer">
+                <span class="tree-symbol-desc">
+                  <strong>Conhecimento para desenvolver pessoas.</strong>
+                  <br>O símbolo une a árvore do conhecimento com a lâmpada de ideias, aprendizado e transformação.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. PROFESSOR / QUEM VAI ENSINAR? -->
+    <section class="section instructor-section">
+      <div class="container">
+        <div class="section-title-wrap text-center">
+          <span class="section-tag">CORPO DOCENTE</span>
+          <h2 class="section-title">Quem estará com você nas aulas?</h2>
+          <p class="section-description">Aprenda com quem vive a rotina do cuidado e o ensino na área da saúde</p>
+        </div>
+
+        <div class="instructor-card">
+          <div class="instructor-photo-wrap">
+            <img src="images/instructor.jpg" alt="Professora e especialista em saúde da CIEDH" class="instructor-photo">
+            <div class="instructor-tag">CIEDH Saúde</div>
+          </div>
+
+          <div class="instructor-content">
+            <div class="instructor-header-meta">
+              <h3 class="instructor-name">Equipe Docente CIEDH</h3>
+              <span class="instructor-role">Especialistas em Enfermagem, Saúde e Cuidados com o Idoso</span>
+            </div>
+
+            <p class="instructor-bio">
+              Nossos instrutores são profissionais com sólida atuação na área da saúde e vivência prática na assistência a idosos e pacientes dependentes. Durante a imersão de 3 aulas, você terá contato direto com quem compreende as técnicas corretas, os protocolos de segurança e, acima de tudo, o valor do atendimento humanizado.
+            </p>
+
+            <div class="instructor-points">
+              <div class="point-badge"><i class="fa-solid fa-check"></i> Experiência prática hospitalar e domiciliar</div>
+              <div class="point-badge"><i class="fa-solid fa-check"></i> Didática acessível para quem nunca estudou saúde</div>
+              <div class="point-badge"><i class="fa-solid fa-check"></i> Foco em segurança e prevenção de acidentes</div>
+            </div>
+
+            <div class="instructor-cta-box">
+              <p>Participe das transmissões e tire suas dúvidas diretamente durante o evento.</p>
+              <a href="#formulario" class="btn-link-action">Garantir acesso às aulas <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. PROVA SOCIAL -->
+    <section class="section social-proof-section bg-light">
+      <div class="container">
+        <div class="section-title-wrap text-center">
+          <span class="section-tag">PROVA SOCIAL</span>
+          <h2 class="section-title">Quem já passou pela CIEDH</h2>
+          <p class="section-description">Veja momentos reais de aprendizado e histórias de alunos que transformaram suas vidas</p>
+        </div>
+
+        <!-- Foto de Sala de Aula e Prática -->
+        <div class="proof-photo-banner">
+          <div class="proof-img-container">
+            <img src="images/students-class.jpg" alt="Alunos da CIEDH em treinamento prático de saúde e cuidado ao paciente" class="proof-class-img">
+            <div class="proof-overlay-tag">
+              <i class="fa-solid fa-users"></i> Treinamento prático e formação continuada na CIEDH
+            </div>
+          </div>
+        </div>
+
+        <!-- Depoimentos de Alunos -->
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "Eu não sabia por onde começar a cuidar da minha mãe, tinha muito medo de machucar ela na hora de levantar da cama. As orientações da CIEDH me deram uma segurança que eu não tinha antes."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar"><i class="fa-solid fa-user"></i></div>
+              <div>
+                <strong>Maria de Fátima R.</strong>
+                <span>Cuidado familiar — São Paulo / SP</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "Estava desempregada e procurando uma área com oportunidade de trabalho rápido. O evento gratuito abriu minha mente para o quanto essa profissão é valorizada quando feita com seriedade e técnica."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar"><i class="fa-solid fa-user"></i></div>
+              <div>
+                <strong>Ana Paula Silveira</strong>
+                <span>Transição de Carreira — Belo Horizonte / MG</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "A didática dos professores da CIEDH é excelente. Eles explicam sem termos complicados e mostram o que realmente acontece no dia a dia. Recomendo para qualquer pessoa interessada na saúde."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar"><i class="fa-solid fa-user"></i></div>
+              <div>
+                <strong>Carlos Eduardo L.</strong>
+                <span>Aluno CIEDH — Curitiba / PR</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="instagram-banner">
+          <div class="instagram-content">
+            <i class="fa-brands fa-instagram instagram-icon"></i>
+            <div>
+              <h4>Acompanhe nosso dia a dia no Instagram</h4>
+              <p>Fotos de turmas, dicas de saúde e bastidores das aulas na CIEDH.</p>
+            </div>
+          </div>
+          <a href="https://www.instagram.com/leonardo.ciedh?stkn=b2RpMWZuN3BoZXRi" target="_blank" rel="noopener noreferrer" class="btn-instagram">
+            <i class="fa-brands fa-instagram"></i> @leonardo.ciedh
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. QUEBRA DE OBJEÇÕES -->
+    <section class="section objections-section">
+      <div class="container">
+        <div class="section-title-wrap text-center">
+          <span class="section-tag">TRANSPARÊNCIA TOTAL</span>
+          <h2 class="section-title">Ainda com dúvidas? Nós respondemos com clareza.</h2>
+          <p class="section-description">Confira as respostas diretas para as principais dúvidas de quem quer participar</p>
+        </div>
+
+        <div class="objections-grid">
+          <div class="objection-card">
+            <div class="objection-q">
+              <span class="q-icon"><i class="fa-solid fa-question"></i></span>
+              <h3>"Mas eu nunca trabalhei como cuidador(a). Posso fazer?"</h3>
+            </div>
+            <div class="objection-a">
+              <p><strong>Não tem problema algum!</strong> As 3 aulas são 100% introdutórias e foram planejadas especialmente para pessoas que desejam conhecer a área do zero, sem jargões difíceis.</p>
+            </div>
+          </div>
+
+          <div class="objection-card">
+            <div class="objection-q">
+              <span class="q-icon"><i class="fa-solid fa-question"></i></span>
+              <h3>"Preciso ter formação ou experiência prévia na área da saúde?"</h3>
+            </div>
+            <div class="objection-a">
+              <p><strong>Não.</strong> Você não precisa ser enfermeiro, técnico ou ter experiência hospitalar. O conteúdo foi elaborado para ser didático, acolhedor e de fácil assimilação para qualquer pessoa.</p>
+            </div>
+          </div>
+
+          <div class="objection-card">
+            <div class="objection-q">
+              <span class="q-icon"><i class="fa-solid fa-question"></i></span>
+              <h3>"As aulas realmente são gratuitas ou tem pegadinha?"</h3>
+            </div>
+            <div class="objection-a">
+              <p><strong>Sim, 100% gratuitas!</strong> As três aulas desta campanha não têm cobrança alguma. Você assiste online, recebe o material de apoio e não paga nada por isso.</p>
+            </div>
+          </div>
+
+          <div class="objection-card">
+            <div class="objection-q">
+              <span class="q-icon"><i class="fa-solid fa-question"></i></span>
+              <h3>"Vou receber certificado ao final?"</h3>
+            </div>
+            <div class="objection-a">
+              <p><strong>Sim!</strong> Os participantes que acompanharem as aulas do evento terão direito ao Certificado Digital de Participação emitido pela CIEDH para enriquecer seu currículo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. CTA INTERMEDIÁRIO / SEU PRIMEIRO PASSO -->
+    <section class="section mid-cta-section text-center">
+      <div class="container">
+        <div class="mid-cta-box">
+          <span class="mid-tag">OPORTUNIDADE EXCLUSIVA</span>
+          <h2 class="mid-cta-title">Seu primeiro passo pode começar aqui.</h2>
+          <p class="mid-cta-desc">
+            Participe gratuitamente das 3 aulas sobre <strong>Cuidados com o Idoso</strong> e descubra como agir com segurança, empatia e conhecimento profissional.
+          </p>
+          <a href="#formulario" class="btn-cta-primary btn-cta-large">
+            <span>QUERO PARTICIPAR DAS AULAS GRATUITAS</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <p class="mid-cta-sub">Preencha seus dados em menos de 30 segundos e receba as informações para participar.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. FAQ (PERGUNTAS FREQUENTES EM ACCORDION) -->
+    <section class="section faq-section bg-light" id="faq">
+      <div class="container">
+        <div class="section-title-wrap text-center">
+          <span class="section-tag">DÚVIDAS FREQUENTES</span>
+          <h2 class="section-title">Perguntas Frequentes (FAQ)</h2>
+          <p class="section-description">Tudo o que você precisa saber sobre as 3 aulas gratuitas</p>
+        </div>
+
+        <div class="faq-accordion-wrap">
+          <!-- Pergunta 1 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>As aulas são realmente gratuitas?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Sim. A participação nas três aulas da campanha é totalmente gratuita. Não há custo de matrícula, taxa de inscrição ou cobrança oculta.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pergunta 2 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Para quem são indicadas essas aulas?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Para pessoas interessadas em conhecer melhor a área de Cuidados com o Idoso, especialmente iniciantes, familiares que cuidam de entes queridos, e profissionais que desejam ingressar ou fazer transição para o setor de saúde e assistência.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pergunta 3 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Preciso ter experiência prévia?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Não. O conteúdo das 3 aulas foi desenhado para iniciantes e não requer conhecimento prévio nem formação na área da saúde.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pergunta 4 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>As aulas serão online ou presenciais?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>As 3 aulas serão <strong>100% online</strong>, transmitidas com acesso exclusivo para quem se cadastrar nesta página. Você poderá assistir pelo celular, tablet ou computador no conforto da sua casa.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pergunta 5 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Quando serão as aulas e quais os horários?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>As datas e horários exatos serão enviados diretamente para o seu WhatsApp e e-mail cadastrado logo após a confirmação da sua inscrição gratuita.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pergunta 6 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Como vou receber o link de acesso?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Os links e instruções de acesso serão enviados via <strong>WhatsApp e E-mail</strong>. Por isso, certifique-se de preencher seus dados corretamente no formulário.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pergunta 7 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Existe certificado de participação?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Sim. Os alunos que acompanharem as 3 aulas gratuitas poderão solicitar o Certificado Digital de Participação emitido pela CIEDH.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pergunta 8 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Depois das aulas posso continuar minha formação?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Sim! Ao final da experiência gratuita, a CIEDH apresentará as opções de cursos de formação continuada e profissionalização para quem desejar avançar e se certificar formalmente na área.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 13. ÚLTIMO BLOCO — FUNDO AZUL INSTITUCIONAL -->
+    <section class="section final-banner-section">
+      <div class="container">
+        <div class="final-banner-content text-center">
+          <div class="final-logo-wrap">
+            <img src="images/logo-ciedh.png" alt="CIEDH Logo" class="final-logo">
+          </div>
+          <span class="final-subtag">CENTRO INTEGRADO DE EDUCAÇÃO E DESENVOLVIMENTO HUMANO</span>
+          <h2 class="final-banner-title">3 aulas. Um novo conhecimento. Um possível novo caminho.</h2>
+          <p class="final-banner-desc">Não deixe essa oportunidade passar. As vagas são limitadas para podermos garantir a qualidade do evento.</p>
+          <a href="#hero" class="btn-cta-light">
+            <i class="fa-solid fa-hand-holding-heart"></i>
+            <span>PARTICIPAR GRATUITAMENTE</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 14. RODAPÉ (Pequeno, Limpo e com LGPD) -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <strong>CIEDH</strong>
+          <span>Centro Integrado de Educação e Desenvolvimento Humano</span>
+          <p class="footer-slogan">A educação que desenvolve pessoas e transforma possibilidades em oportunidades.</p>
+        </div>
+
+        <div class="footer-links">
+          <button type="button" class="footer-link-btn" onclick="openModal('privacidadeModal')">Política de Privacidade</button>
+          <span class="sep">•</span>
+          <button type="button" class="footer-link-btn" onclick="openModal('termosModal')">Termos de Uso</button>
+          <span class="sep">•</span>
+          <a href="https://www.instagram.com/leonardo.ciedh?stkn=b2RpMWZuN3BoZXRi" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+            <i class="fa-brands fa-instagram"></i> Instagram @leonardo.ciedh
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; <span id="currentYear"></span> CIEDH — Centro Integrado de Educação e Desenvolvimento Humano. Todos os direitos reservados.
+        </p>
+        <p class="footer-disclaimer">
+          Em conformidade com a Lei Geral de Proteção de Dados (LGPD - Lei 13.709/2018). Coletamos apenas as informações necessárias para viabilizar seu acesso ao evento educacional gratuito.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal de Sucesso após Envio do Formulário -->
+  <div class="modal" id="successModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-overlay" onclick="closeModal('successModal')"></div>
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-icon-success">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+        <button class="modal-close" onclick="closeModal('successModal')" aria-label="Fechar">&times;</button>
+      </div>
+      <div class="modal-body text-center">
+        <h3 id="modalTitle">Inscrição realizada com sucesso!</h3>
+        <p class="modal-lead">Parabéns por dar esse importante passo! Sua vaga nas <strong>3 Aulas Gratuitas de Cuidados com o Idoso</strong> está pré-garantida.</p>
+        
+        <div class="modal-steps-box">
+          <h4><i class="fa-solid fa-list-check text-teal"></i> Próximo passo fundamental:</h4>
+          <p>Para não perder o link das transmissões e receber o material exclusivo de apoio, entre agora no nosso canal oficial de alunos no WhatsApp:</p>
+          <a href="https://www.instagram.com/leonardo.ciedh?stkn=b2RpMWZuN3BoZXRi" target="_blank" rel="noopener noreferrer" class="btn-whatsapp-join">
+            <i class="fa-brands fa-whatsapp"></i> ENTRAR NO GRUPO VIP DE AVISOS
+          </a>
+        </div>
+        
+        <p class="modal-sub">Enviamos também uma confirmação para o seu e-mail cadastrado. Fique de olho na sua caixa de entrada!</p>
+      </div>
+      <div class="modal-footer text-center">
+        <button type="button" class="btn-secondary" onclick="closeModal('successModal')">Fechar esta janela</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de Política de Privacidade (LGPD) -->
+  <div class="modal" id="privacidadeModal" role="dialog" aria-modal="true">
+    <div class="modal-overlay" onclick="closeModal('privacidadeModal')"></div>
+    <div class="modal-dialog modal-legal">
+      <div class="modal-header">
+        <h3>Política de Privacidade e Proteção de Dados (LGPD)</h3>
+        <button class="modal-close" onclick="closeModal('privacidadeModal')" aria-label="Fechar">&times;</button>
+      </div>
+      <div class="modal-body legal-content">
+        <p>A <strong>CIEDH — Centro Integrado de Educação e Desenvolvimento Humano</strong> está comprometida com a transparência e a segurança dos dados pessoais de seus usuários, em total conformidade com a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018 - LGPD).</p>
+        <h4>1. Finalidade da Coleta de Dados</h4>
+        <p>Os dados solicitados neste formulário (Nome completo, WhatsApp e E-mail) são utilizados única e exclusivamente para:</p>
+        <ul>
+          <li>Identificar o participante e enviar links de acesso às 3 aulas gratuitas;</li>
+          <li>Enviar comunicados importantes sobre datas, horários e materiais complementares;</li>
+          <li>Emitir e validar o Certificado de Participação após o evento;</li>
+          <li>Apresentar eventuais oportunidades de qualificação profissional continuada oferecidas pela CIEDH.</li>
+        </ul>
+        <h4>2. Segurança e Não Compartilhamento</h4>
+        <p>Seus dados nunca serão comercializados, cedidos ou compartilhados com terceiros sem seu consentimento expresso. Adotamos medidas técnicas de segurança para proteger suas informações.</p>
+        <h4>3. Seus Direitos</h4>
+        <p>A qualquer momento, você pode solicitar a confirmação da existência de tratamento, acesso, correção ou eliminação dos seus dados de nossa base entrando em contato pelos canais oficiais da CIEDH.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-secondary" onclick="closeModal('privacidadeModal')">Entendido</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de Termos de Uso -->
+  <div class="modal" id="termosModal" role="dialog" aria-modal="true">
+    <div class="modal-overlay" onclick="closeModal('termosModal')"></div>
+    <div class="modal-dialog modal-legal">
+      <div class="modal-header">
+        <h3>Termos de Uso do Evento Gratuito</h3>
+        <button class="modal-close" onclick="closeModal('termosModal')" aria-label="Fechar">&times;</button>
+      </div>
+      <div class="modal-body legal-content">
+        <h4>1. Sobre o Evento</h4>
+        <p>O evento "3 Aulas Gratuitas — Cuidados com o Idoso" é uma iniciativa educacional introdutória oferecida pelo CIEDH — Centro Integrado de Educação e Desenvolvimento Humano, realizada de forma 100% online.</p>
+        <h4>2. Gratuidade e Acesso</h4>
+        <p>A inscrição e a participação nas 3 aulas são totalmente gratuitas. O acesso aos links é pessoal e intransferível.</p>
+        <h4>3. Propriedade Intelectual</h4>
+        <p>Todo o conteúdo, apostilas, vídeos, marcas e materiais gráficos disponibilizados durante o evento são de propriedade exclusiva da CIEDH, sendo proibida sua reprodução ou comercialização não autorizada.</p>
+        <h4>4. Certificado de Participação</h4>
+        <p>O Certificado de Participação será disponibilizado de acordo com os critérios de assiduidade divulgados durante a realização das aulas.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-secondary" onclick="closeModal('termosModal')">Entendido</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Botão Flutuante de Suporte / Instagram -->
+  <aside class="floating-social-widget" aria-label="Acompanhe nas redes sociais">
+    <a href="https://www.instagram.com/leonardo.ciedh?stkn=b2RpMWZuN3BoZXRi" target="_blank" rel="noopener noreferrer" class="floating-insta-btn" title="Siga nosso Instagram oficial">
+      <i class="fa-brands fa-instagram"></i>
+      <span class="floating-tooltip">Acompanhe no Instagram</span>
+    </a>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
