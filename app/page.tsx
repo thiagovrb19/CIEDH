@@ -1,22 +1,22 @@
 'use client';
 
 import React, { useState } from 'react';
-import AnnouncementBar from '@/components/AnnouncementBar';
-import Header from '@/components/Header';
-import HeroSection from '@/components/HeroSection';
-import IdentificationSection from '@/components/IdentificationSection';
-import CurriculumSection from '@/components/CurriculumSection';
-import ValueSection from '@/components/ValueSection';
-import AboutSection from '@/components/AboutSection';
-import InstructorSection from '@/components/InstructorSection';
-import SocialProofSection from '@/components/SocialProofSection';
-import ObjectionsSection from '@/components/ObjectionsSection';
-import MidCtaSection from '@/components/MidCtaSection';
-import FaqSection from '@/components/FaqSection';
-import FinalBannerSection from '@/components/FinalBannerSection';
-import Footer from '@/components/Footer';
-import { SuccessModal, LegalModal } from '@/components/Modals';
-import FloatingSocial from '@/components/FloatingSocial';
+import AnnouncementBar from '@/components/layout/AnnouncementBar';
+import Header from '@/components/layout/Header';
+import HeroSection from '@/components/sections/HeroSection';
+import IdentificationSection from '@/components/sections/IdentificationSection';
+import CurriculumSection from '@/components/sections/CurriculumSection';
+import ValueSection from '@/components/sections/ValueSection';
+import AboutSection from '@/components/sections/AboutSection';
+import InstructorSection from '@/components/sections/InstructorSection';
+import SocialProofSection from '@/components/sections/SocialProofSection';
+import ObjectionsSection from '@/components/sections/ObjectionsSection';
+import MidCtaSection from '@/components/sections/MidCtaSection';
+import FaqSection from '@/components/sections/FaqSection';
+import FinalBannerSection from '@/components/sections/FinalBannerSection';
+import Footer from '@/components/layout/Footer';
+import { SuccessModal, LegalModal } from '@/components/ui/Modals';
+import FloatingSocial from '@/components/layout/FloatingSocial';
 
 export default function Home() {
   const [successModalOpen, setSuccessModalOpen] = useState(false);

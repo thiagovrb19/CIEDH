@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { PlayCircle, Check, HeartHandshake, Award } from 'lucide-react';
-import LeadForm from './LeadForm';
+import LeadForm from '@/components/ui/LeadForm';
 
 interface HeroSectionProps {
   onSuccess: (userData: { nome: string; whatsapp: string; email: string }) => void;
